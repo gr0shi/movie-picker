@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie Picker
 
-## Getting Started
+- TODO
+  - [X] создать макет страниц (примерный дизайн и стиль страниц, )
+  - [X] прикинуть полноценный функционал приложения
+  - [X] разработать алгоритмы мне повезет(рандом фильм с автоматическим включением), рандомного выбора фильма и опроса(сколько шагов, какие вопросы и прочее)
+  - [X] разработать систему авторизации
+  - [X] разработать алгоритм персональных рекомендаций (после регистрации пользователя)
+  - [X] разработать автомизированные тесты при помощи robotFramework
+  - [X] реализовать закладки
+  - [X] интеграция с rutube embed
+  - [X] система оценки фильма (звезды, вопрос - "вам понравился фильм?", запись данных в бд для обработки данных)
+  - [X] реализовать систему профилей
+  - [X] парсинг данных
 
-First, run the development server:
+***
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Movie Picker — это веб-приложение, которое помогает пользователям выбрать фильм, исходя из их предпочтений. После того, как пользователь проходит опрос, система предлагает фильм и предоставляет ссылку или всплывающее окно с видео, используя API Rutube.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Функциональные возможности
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Глубокий опрос для сбора предпочтений пользователя.
+- Персонализированные рекомендации фильмов на основе ответов пользователя.
+- Интеграция с Rutube API для показа трейлеров или фильмов прямо в приложении.
+- Удобный интерфейс с возможностью перезагрузки рекомендаций.
+- todo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Стек технологий
 
-## Learn More
+- [**React**](react.dev) — для создания пользовательского интерфейса.
+- [**Next.js**](https://nextjs.org/) — основной фреймворк.
+- [**RobotFramework**](https://robotframework.org/) — для проведения автоматизированных тестов.
+- [**Git**](https://git-scm.com/) — для контроля версий приложения
+- [**SQLite**](https://www.sqlite.org/) — для управления базами данных
+- [**Rutube API**](https://rutube.ru/info/embed/#embed001) — для получения ссылок на фильмы или видео.
+- [**todo**](todo) — todo
 
-To learn more about Next.js, take a look at the following resources:
+## Установка
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Клонируйте репозиторий:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```next.js
+    git clone https://github.com/your-username/movie-picker.git
+    ```
 
-## Deploy on Vercel
+2. Перейдите в папку проекта:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```next.js
+    cd movie-picker
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Установите зависимости:
+
+    ```next.js
+    npm install
+    ```
+
+4. Запустите проект:
+
+    ```next.js
+    npm run start
+    ```
+
+Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
+
+## Использование
+
+1. Откройте приложение и пройдите опрос, чтобы указать ваши предпочтения.
+2. На основе ваших ответов будет предложен фильм.
+3. Посмотрите трейлер или фильм, нажав на предложенную ссылку или всплывающее окно.
+
+## Дополнительная информация
+
+- Любые ошибки или предложения можно отправить через Issues в репозитории.
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT. См. файл [LICENSE](LICENSE) для получения дополнительной информации.
